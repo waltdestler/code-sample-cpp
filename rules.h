@@ -1,0 +1,109 @@
+/** This file contains various rules and graphics settings.
+ * TODO: Don't hardcode and move these to an external XML file.
+ */
+
+#pragma once
+
+#define SCREEN_WIDTH 320
+#define SCREEN_HEIGHT 480
+#define SCREEN_CENTER ofPoint(160, 240)
+
+#define PLAYER_CIRCLE_R 255
+#define PLAYER_CIRCLE_G 255
+#define PLAYER_CIRCLE_B 255
+#define PLAYER_CIRCLE_A 255
+#define PLAYER_CIRCLE_RAD 16
+#define PLAYER_TRIANGLE_R 255
+#define PLAYER_TRIANGLE_G 255
+#define PLAYER_TRIANGLE_B 255
+#define PLAYER_TRIANGLE_A 255
+#define PLAYER_TRIANGLE_WIDTH 20
+#define PLAYER_TRIANGLE_HEIGHT 24
+#define PLAYER_COLLISION_RAD 9
+#define PLAYER_DEATH_R 255
+#define PLAYER_DEATH_G 0
+#define PLAYER_DEATH_B 0
+#define PLAYER_DEATH_A 255
+#define PLAYER_DEATH_DURATION 60
+#define PLAYER_DEATH_RAD 128
+
+#define BULLET_R 255
+#define BULLET_G 255
+#define BULLET_B 255
+#define BULLET_A 255
+#define BULLET_DELETE_THRESHOLD 100
+
+#define DUST_R 255
+#define DUST_G 255
+#define DUST_B 255
+#define DUST_A 31
+#define DUST_RAD 10
+#define DUST_GRAVITY_FACTOR .8
+#define DUST_FRICTION .75
+#define DUST_COUNT 10
+
+#define ENEMY_R 255
+#define ENEMY_G 0
+#define ENEMY_B 0
+#define ENEMY_A 255
+#define ENEMY_MIN_DIST 250
+#define ENEMY_MAX_DIST 550
+#define ENEMY_DEATH_R 255
+#define ENEMY_DEATH_G 255
+#define ENEMY_DEATH_B 255
+#define ENEMY_DEATH_A 255
+#define ENEMY_DEATH_DURATION 30
+#define ENEMY_DEATH_RAD_FACTOR 2
+
+#define WIN_R 255
+#define WIN_G 255
+#define WIN_B 255
+#define WIN_A 255
+#define WIN_DURATION 60
+#define WIN_RAD 600
+
+#define LOSE_R 255
+#define LOSE_G 0
+#define LOSE_B 0
+#define LOSE_A 255
+#define LOSE_DURATION 60
+#define LOSE_RAD 600
+
+#define LEVEL_WIN_DELAY 15
+#define LEVEL_LOSE_DELAY 15
+#define LEVEL_INTRO_R 255
+#define LEVEL_INTRO_G 255
+#define LEVEL_INTRO_B 255
+#define LEVEL_INTRO_A 255
+#define LEVEL_INTRO_DURATION 60
+#define LEVEL_INTRO_RAD 600
+#define LEVEL_TEXT_R 255
+#define LEVEL_TEXT_G 0
+#define LEVEL_TEXT_B 0
+#define LEVEL_TEXT_A 255
+#define LEVEL_TEXT_DURATION 120
+#define LEVEL_TEXT_X SCREEN_CENTER.x
+#define LEVEL_TEXT_Y SCREEN_CENTER.y
+#define LEVEL_TEXT_FORMAT "WAVE!\n%02d/%02d"
+#define LEVEL_INSTRUCTIONS_R 155
+#define LEVEL_INSTRUCTIONS_G 155
+#define LEVEL_INSTRUCTIONS_B 155
+#define LEVEL_INSTRUCTIONS_A 255
+#define LEVEL_INSTRUCTIONS_X SCREEN_CENTER.x
+#define LEVEL_INSTRUCTIONS_Y SCREEN_CENTER.y
+
+#define GRAVITY_ARROW_LENGTH 125
+#define GRAVITY_ARROW_TEXT "GRAVITY"
+#define GRAVITY_ARROW_R 255
+#define GRAVITY_ARROW_G 255
+#define GRAVITY_ARROW_B 255
+#define GRAVITY_ARROW_A 255
+
+#define PATH_PROJECTION_R 255
+#define PATH_PROJECTION_G 255
+#define PATH_PROJECTION_B 255
+#define PATH_PROJECTION_A 255
+
+struct GenericLevelRules;
+extern GenericLevelRules* levels[];
+#define LEVEL_COUNT 15
